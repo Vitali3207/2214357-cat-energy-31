@@ -11,9 +11,14 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img class="main-header__logo-images" src="#" width="33" height="38" alt="">
-    </a>
+    <div class="main-header__logo logo">
+      <a class="logo__icon" href="index.html">
+        <img src="#" width="70" height="59" alt="Логотип компании">
+      </a>
+      <a class="logo__title" href="index.html">
+        <img src="#" width="118" height="21" alt="Cat Energy">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually hiden">Открыть меню</span>
@@ -89,18 +94,16 @@
         <p class="example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="results__wrapper">
-          <ul class="results__list">
-            <li class="results__item">
-              <strong class="results__title">5 КГ</strong>
-              <p class="results__description">снижение веса</p>
-            </li>
-            <li class="results__item">
-              <strong class="results__title">60 ДНЕЙ</strong>
-              <p class="results__description">затрачено времени</p>
-            </li>
-          </ul>
-        </div>
+        <dl class="example__results results">
+          <div class="results__item">
+            <dt class="results__number">5 кг</dt>
+            <dd class="results__description">снижение веса</dd>
+          </div>
+          <div class="results__item">
+            <dt class="results__number">60 дней</dt>
+            <dd class="results__description">затрачено времени</dd>
+          </div>
+        </dl>
         <p class="example-total">
           <span>Затраты на питание:</span>
           15 000 РУБ.
@@ -142,7 +145,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copiright">
-          <a class="copyright__link">
+          <a class="copyright__link" href="https://htmlacademy.ru/">
             <img class="copyright__link-images" src="source/images/icons/html-academy.svg" width="168" height="37" alt="Логотип компании HTMLacademy"></a>
         </div>
       </div>
