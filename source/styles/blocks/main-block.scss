@@ -1,20 +1,19 @@
-.main-block{
-
+.main-block__title {
+  font-family: $font-secondary;
+  font-size: 60px;
+  line-height: 60px;
 }
 
-.main-block__title{
-
+.main-block__description {
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 20px;
 }
 
-.main-block__description{
-
-
-}
-
-.main-block__images{
-
-}
-
-.main-block__button{
-
+.main-block__button {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
 }

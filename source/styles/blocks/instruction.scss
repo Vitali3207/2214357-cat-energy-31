@@ -1,23 +1,14 @@
-.instruction{
-
+.instruction__title {
+  font-family: $font-secondary;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
 }
 
-.instruction__wrapper{
-
-}
-
-.instruction__title{
-
-}
-
-.instruction__list{
-
-
-}
-.instruction__item{
-
-}
-
-.instruction__description{
-
+.instruction__description {
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-text-secondary;
 }

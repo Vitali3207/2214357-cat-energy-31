@@ -1,25 +1,7 @@
-.main-nav{
-
-}
-
-.main-nav__toggle{
-
-
-}
-
-.main-nav__list{
-
-}
-
-.main-nav__item{
-
-}
-
-.main-nav__item--current{
-
-}
-
-.main-nav__link{
-
-
+.main-nav__link {
+  font-family: $font-secondary;
+  font-size: 18px;
+  line-height: 24px;
+  color: $color-text-primary;
+  text-decoration: none;
 }

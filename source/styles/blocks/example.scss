@@ -1,29 +1,21 @@
-.example{
-
+.example__title {
+  font-family: $font-secondary;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
 }
 
-.example__wrapper{
-
-
+.example__description {
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-text-secondary;
 }
 
-.example__title{
-
-
+.example__total {
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
 }
 
-.example__description{
-
-}
-
-.example__results{
-
-}
-
-.example__total{
-
-}
-
-.example__slider{
-
-}

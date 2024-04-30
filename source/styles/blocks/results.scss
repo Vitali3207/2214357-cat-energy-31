@@ -1,15 +1,14 @@
-.results{
-
+.results__number {
+  font-family: $font-secondary;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
 }
 
-.results__item{
-
-}
-
-.results__number{
-
-}
-
-.results__description{
-
+.results__description {
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $color-text-secondary;
 }

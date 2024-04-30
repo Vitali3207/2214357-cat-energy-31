@@ -1,20 +1,15 @@
-.promo{
-
+.promo__text {
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 26px;
+  color: #111111;
 }
 
-.promo__wrappper{
-
+.promo__address {
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #444444;
 }
 
-.promo__text{
-
-
-}
-
-.promo__address{
-
-}
-
-.promo__map{
-
-}

@@ -1,17 +1,18 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixin.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 @import "./common/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/button.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/header-container.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/main-block.scss";
-@import "./blocks/button.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/instruction.scss";
 @import "./blocks/example.scss";

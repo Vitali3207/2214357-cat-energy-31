@@ -1,33 +1,28 @@
-.catalog-additional{
-
+.catalog-additional__headline {
+  font-family: $font-secondary;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
 }
 
-.catalog-additional__headline{
-
-
+.catalog-additional__title {
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-text-third;
 }
 
-
-.catalog-additional__list{
-
+.catalog-additional__button {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
 }
 
-.catalog-additional__item{
-
-}
-
-.catalog-additional__title{
-
-}
-
-.catalog-additional__button{
-
-}
-
-.catalog-additional__promo{
-
-}
-
-.catalog-additional__promo-text{
-
+.catalog-additional__promo-text {
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
