@@ -1,7 +1,12 @@
+.programs__columns {
+  background-color: $bg-basic-grey;
+}
+
 .programs__title {
   font-family: $font-secondary;
   font-size: 24px;
   line-height: 37px;
+  text-transform: uppercase;
 }
 
 .programs__description {
@@ -17,4 +22,5 @@
   text-align: center;
   text-decoration: none;
   color: $color-text-primary;
+  text-transform: uppercase;
 }

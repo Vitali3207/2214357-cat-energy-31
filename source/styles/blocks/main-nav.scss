@@ -1,3 +1,10 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+}
+
 .main-nav__link {
   font-family: $font-secondary;
   font-size: 18px;
