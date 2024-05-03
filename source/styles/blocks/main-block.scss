@@ -4,7 +4,7 @@
   background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: contain;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background@2x.jpg");
