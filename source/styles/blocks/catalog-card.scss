@@ -56,6 +56,11 @@
     width: 200px;
     max-height: 210px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 169px;
+    max-height: 210px;
+  }
 }
 
 .catalog-card__wrapper {
