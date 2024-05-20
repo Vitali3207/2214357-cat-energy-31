@@ -78,7 +78,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     column-gap: 43px;
-    margin-bottom: 99px;
+    margin-bottom: 150px;
   }
 
   @media (min-width: $desktop-width) {
@@ -145,12 +145,11 @@
   }
 }
 
-.example__total {
+.example__expenses {
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 20px;
   color: $color-text-primary;
-  text-align: center;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -169,7 +168,12 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
-    column-gap: 63px;
+    justify-content: flex-start;
+  }
+}
+
+.example-price {
+  @media (min-width: $desktop-width) {
+    margin-left: 60px;
   }
 }
