@@ -117,11 +117,10 @@
     line-height: 36px;
     margin-left: 0;
     margin-bottom: 24;
-  }
 
-  @media (min-width: $desktop-width) {
-    margin-left: 214px;
-    margin-right: 73px;
+    @media (min-width: $desktop-width) {
+      margin-left: 214px;
+    }
   }
 }
 
@@ -141,8 +140,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 214px;
-    margin-right: 73px;
+    margin-top: 73px;
   }
 }
 
