@@ -1,14 +1,14 @@
 .main-header {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   padding-top: 13px;
-  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
     padding-bottom: 25px;
+    flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,7 +20,9 @@
   display: flex;
   text-decoration: none;
   margin-right: auto;
+  margin-bottom: 4px;
   align-items: center;
+
 
   &:hover {
     opacity: 0.8;
@@ -34,6 +36,7 @@
 .main-header__icon-image {
   display: block;
   margin-right: 56px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin-right: 13px;
@@ -46,6 +49,7 @@
 
 .main-header__icon-text {
   display: block;
+  margin-bottom: 13px;
 
   @media (min-width: $desktop-width) {
     width: 118px;
