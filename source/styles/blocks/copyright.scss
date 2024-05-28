@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 168px;
+    width: 162px;
     display: table-cell;
     vertical-align: middle;
 
@@ -30,7 +30,7 @@
 
   &::after {
     position: absolute;
-    bottom: 0;
+    bottom: 7px;
     right: 0;
     display: block;
     content: "";
@@ -43,7 +43,7 @@
 
     @media (min-width: $tablet-width) {
       top: 0;
-      left: 140px;
+      left: 136px;
     }
   }
 }

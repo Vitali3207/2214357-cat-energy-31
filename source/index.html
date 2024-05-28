@@ -29,7 +29,7 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
+          <a class="main-nav__link main-nav__link--currents" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -48,6 +48,9 @@
         </h1>
         <p class="main-block__description">Занялся собой? Займись котом!</p>
         <picture>
+          <source type="image/webp" width="552" height="499" media="(min-width: 1440px)" srcset="./images/index-can-desktop@1x.webp 1x, ./images/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" width="709" height="609" media="(min-width: 768px)" srcset="./images/index-can-tablet@1x.webp 1x, ./images/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" width="280" height="270" srcset="./images/index-can@1x.webp 1x, ./images/index-can@2x.webp 2x">
           <source width="552" height="499" media="(min-width: 1440px)" srcset="./images/index-can-desktop@1x.png 1x, ./images/index-can-desktop@2x.png 2x" type="image/png">
           <source width="709" height="609" media="(min-width: 768px)" srcset="./images/index-can-tablet@1x.png 1x, ./images/index-can-tablet@2x.png 2x" type="image/png">
           <img class="main-block__images" src="./images/index-can@1x.png" srcset="./images/index-can@2x.png 2x" width="280" height="270" alt="Питание для котов">
@@ -114,18 +117,24 @@
             </div>
             <div class="example__expenses">
               <dt>Затраты на питание:</dt>
-              <dd class="example-price">15000руб.</dd>
+              <dd class="example-price">15&nbsp;000&nbsp;руб.</dd>
             </div>
           </dl>
         </div>
         <div class=" example__slider slider">
           <div class="slider__wrapper">
             <picture>
+              <source type="image/webp" width="560" height="512" media="(min-width: 1440px)" srcset="./images/state-before-tablet-desktop@1x.webp 1x, ./images/state-before-tablet-desktop@2x.webp 2x">
+              <source type="image/webp" width="560" height="512" media="(min-width: 768px)" srcset="./images/state-before-tablet-desktop@1x.webp 1x, ./images/state-before-tablet-desktop@2x.webp 2x">
+              <source type="image/webp" width="280" height="256" srcset="./images/state-before-mobile@1x.webp 1x, ./images/state-before-mobile@2x.webp 2x">
               <source type="image/png" width="560" height="512" media="(min-width: 1440px)" srcset="./images/state-before-tablet-desktop@1x.png 1x, ./images/state-before-tablet-desktop@2x.png 2x">
               <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="./images/state-before-tablet-desktop@1x.png 1x, ./images/state-before-tablet-desktop@2x.png 2x">
               <img class="slider__image slider__image--before" src="./images/state-before-mobile@1x.png" srcset="./images/state-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
             </picture>
             <picture>
+              <source type="image/webp" width="560" height="512" media="(min-width: 1440px)" srcset="./images/state-after-tablet-desktop@1x.webp 1x, ./images/state-after-tablet-desktop@2x.webp 2x">
+              <source type="image/webp" width="560" height="512" media="(min-width: 768px)" srcset="./images/state-after-tablet-desktop@1x.webp 1x, ./images/state-after-tablet-desktop@2x.webp 2x">
+              <source type="image/webp" width="280" height="256" srcset="./images/state-after-mobile@1x.webp 1x, ./images/state-after-mobile@2x.webp 2x">
               <source type="image/png" width="560" height="512" media="(min-width: 1440px)" srcset="./images/state-after-tablet-desktop@1x.png 1x, ./images/state-after-tablet-desktop@2x.png 2x">
               <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="./images/state-after-tablet-desktop@1x.png 1x, ./images/state-after-tablet-desktop@2x.png 2x">
               <img class="slider__image slider__image--after" src="./images/state-after-mobile@1x.png" srcset="./images/state-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
@@ -144,8 +153,8 @@
       <h2 class="visually-hidden">Приглашение</h2>
       <div class="promo__place page__container">
         <div class="promo__wrappper">
-          <b class="promo__text">Приглашаем к сотрудничеству дилеров!</b>
-          <address class="promo__address">ул. Большая Конюшенная, д. 19/<span class="promo__city">Санкт-Петербург</span></address>
+          <b class="promo__text">Приглашаем<br>к сотрудничеству дилеров!</b>
+          <address class="promo__address">ул. Большая Конюшенная, д. 19/8 <span class="promo__city">Санкт-Петербург</span></address>
         </div>
       </div>
       <div class="promo__map">

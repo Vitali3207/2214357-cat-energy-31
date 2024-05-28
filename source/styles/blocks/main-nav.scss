@@ -25,7 +25,7 @@
   background-color: $color-text-primary;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 21px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -33,11 +33,13 @@
 }
 
 .main-nav--opened .main-nav__list {
-  margin: 0 -20px;
+  margin: -1px -20px;
+  position: absolute;
   padding: 0;
   list-style: none;
   background-color: $color-text-fourth;
   min-width: 100%;
+  z-index: 1;
 
 
   @media (min-width: $tablet-width) {
@@ -46,6 +48,7 @@
     max-width: 470px;
     border: none;
     padding: 0;
+    margin-right: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,6 +71,7 @@
     padding: 0;
     list-style: none;
     background-color: $color-text-fourth;
+    margin-right: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +79,8 @@
     margin-right: 0;
     background-color: transparent;
     z-index: 1;
+    padding-top: 2px;
+    padding-right: 2px;
   }
 }
 
@@ -119,5 +125,67 @@
     &--catalog {
       color: $color-text-primary;
     }
+  }
+}
+
+.main-nav__link--current {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $color-line-4;
+    padding-bottom: 8px;
+  }
+}
+
+.main-nav__link--currents {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $bg-basic-white;
+    padding-bottom: 8px;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  @media (max-width: $tablet-width) {
+    position: static;
+    z-index: 1;
+    display: block;
+    padding: 0;
+    list-style: none;
+    background-color: $color-text-fourth;
+    min-width: 100%;
+    margin: 0 -20px;
+  }
+}
+
+.main-nav--nojs .main-nav__link {
+  @media (max-width: $tablet-width) {
+    position: relative;
+    display: block;
+    min-width: 100%;
+    font-family: $font-secondary;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-text-primary;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    background-color: $color-text-fourth;
+    padding: 22px 10px 24px;
+    text-align: center;
+    border-top: 1px solid $color-line-5;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
