@@ -1,5 +1,13 @@
 .slider {
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 85px;
+  }
 }
 
 .slider__wrapper {
@@ -49,6 +57,15 @@
   flex-direction: column;
   justify-content: center;
 
+  &:hover {
+    background-color: $bg-basic-green;
+  }
+
+  &:active {
+    background-color: $bg-color-slider;
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     left: 278px;
   }
@@ -64,19 +81,35 @@
   border: 2px solid $bg-color-social;
   border-radius: 50%;
 
+  &:hover {
+    border: 2px solid $bg-basic-green;
+  }
+
+  &:active {
+    border: 2px solid $bg-color-slider;
+  }
+
   @media (min-width: $tablet-width) {
     top: 237px;
     right: 258px;
   }
+}
 
+.slider__images {
+  position: absolute;
+  bottom: 9px;
+  left: 5px;
+  width: 24px;
+  height: 18px;
+  color: $bg-color-social;
 
-  &::after {
-    display: block;
-    content: "";
-    width: 24px;
-    height: 18px;
-    mask: url("../../icons/stack.svg#thumb");
-    background-color: $bg-color-social;
-    background-repeat: no-repeat;
+  &:hover {
+    color: $bg-basic-green;
+  }
+
+  &:active {
+    color: $bg-color-slider;
+    opacity: 0.6;
   }
 }
+

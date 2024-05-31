@@ -1,8 +1,12 @@
 .catalog {
-  margin-bottom: 71px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 73px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 70px;
   }
 }
 

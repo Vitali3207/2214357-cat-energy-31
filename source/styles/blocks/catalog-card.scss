@@ -78,7 +78,7 @@
   display: block;
   width: 140px;
   max-height: 107px;
-  object-fit: contain;
+  object-fit: cover;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -165,7 +165,7 @@
   margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 26px;
+    margin-bottom: 21px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -193,6 +193,15 @@
 
 .catalog-card__button {
   grid-column: 1/3;
+
+  &:hover {
+    background-color: $bg-color-3;
+  }
+
+  &:active {
+    background-color: $bg-color-3;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 94px;

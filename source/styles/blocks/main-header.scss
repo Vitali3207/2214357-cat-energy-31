@@ -39,6 +39,14 @@
   margin-right: 48px;
   margin-bottom: 13px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 4px;
   }
@@ -53,6 +61,14 @@
 .main-header__icon-text {
   display: block;
   margin-bottom: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $desktop-width) {
     width: 118px;

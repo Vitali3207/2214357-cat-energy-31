@@ -7,7 +7,7 @@
   background-size: 18px 18px;
   background-color: $color-text-primary;
   position: absolute;
-  top: 18px;
+  top: 22px;
   right: 20px;
 
   @media (min-width: $tablet-width) {
@@ -89,12 +89,12 @@
   display: block;
   width: 100%;
   font-family: $font-secondary;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
   color: $color-text-primary;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 22px 10px 24px;
+  padding: 24px 10px 21px;
   text-align: center;
   border-top: 1px solid $color-line-5;
 
@@ -131,14 +131,14 @@
 .main-nav__link--current {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $color-line-4;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
   }
 }
 
 .main-nav__link--currents {
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $bg-basic-white;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
   }
 }
 

@@ -26,7 +26,6 @@
     padding-right: 78px;
     position: absolute;
     top: 95px;
-    left: 120px;
     z-index: 0;
     background-color: $bg-basic-white;
     width: 565px;
@@ -66,12 +65,20 @@
     line-height: 20px;
     width: 157px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .promo__city {
   @media (min-width: $tablet-width) {
     display: block;
     margin-top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
   }
 }
 

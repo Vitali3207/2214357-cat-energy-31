@@ -37,6 +37,15 @@
     mask-repeat: no-repeat;
     background-color: $bg-color-social;
     margin-right: 24px;
+
+    &:focus-visible path {
+      fill: $bg-basic-green;
+    }
+
+    &:active path {
+      fill: $bg-basic-green;
+      opacity: 0.3;
+    }
   }
 
   &--youtube {

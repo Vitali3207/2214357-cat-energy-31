@@ -98,7 +98,19 @@
   text-align: left;
   text-transform: uppercase;
   color: $color-text-secondary;
-  border: 1px solid $color-line-3;
+  border: 1px solid $color-line-7;
+
+  &:hover {
+    border: 1px solid $color-line-3;
+  }
+
+  &:focus {
+    border: 2px solid $color-line-8;
+  }
+
+  &:active {
+    border: 2px solid $color-line-9;
+  }
 
   @media (min-width: $tablet-width) {
     width: 376px;

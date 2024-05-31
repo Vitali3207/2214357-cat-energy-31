@@ -122,12 +122,13 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 15px;
-    right: -235px;
+    right: -225px;
     translate: 0;
   }
 }
@@ -143,6 +144,17 @@
     position: absolute;
     top: 270px;
     margin-left: 90px;
+  }
+
+  &:hover {
+    background-color: $bg-color-3;
+  }
+
+  &:active {
+    &:active {
+      background-color: $bg-color-3;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   @media (min-width: $desktop-width) {
