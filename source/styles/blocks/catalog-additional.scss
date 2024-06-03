@@ -62,10 +62,26 @@
     @media (min-width: $tablet-width) {
       top: 15px;
     }
+  }
 
-    @media (min-width: $desktop-width) {
-      top: 17px;
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      width: 34px;
+      height: 2px;
+      background-color: $color-line-4;
+      top: 10px;
+      left: 0;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
   }
 }
 
@@ -170,11 +186,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    width: 245px;
-    padding-bottom: 0;
-    padding-right: 0;
-    padding-top: 13px;
-    text-align: center;
+    width: 161px;
   }
 
   &::before {

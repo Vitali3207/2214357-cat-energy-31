@@ -43,59 +43,45 @@
   }
 }
 
-.slider__toggle {
-  z-index: 1;
-  position: relative;
-  top: 1px;
-  right: 140px;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 256px;
+.slider__controls {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 4px;
   padding: 0;
-  border: 0;
-  color: $bg-color-social;
-  background-color: transparent;
-  cursor: pointer;
-  stroke: $bg-color-social;
+  background-color: $bg-color-social;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider__toggle {
+  position: absolute;
+  top: 107px;
+  right: 118px;
+  width: 40px;
+  height: 40px;
+  background-color: $color-text-fourth;
+  border: 2px solid $bg-color-social;
+  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: 2px;
-    right: 280px;
-    height: 512px;
+    top: 265px;
+    right: 257px;
   }
 
-  &::before {
-    content: "";
-    z-index: -1;
+
+  &::after {
     display: block;
-    position: absolute;
-    top: calc(50% - 1px);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 4px;
-    height: 100%;
-    border-radius: 2px;
+    content: "";
+    width: 24px;
+    height: 18px;
+    mask: url("../../icons/stack.svg#thumb");
     background-color: $bg-color-social;
-  }
-
-  &:focus {
-    color: $bg-basic-green;
-    stroke: $bg-basic-green;
-  }
-
-  &:focus::before {
-    background-color: $bg-basic-green;
-  }
-
-  &:active {
-    color: $bg-color-slider;
-    stroke: $bg-color-slider;
-    opacity: 0.6;
-  }
-
-  &:active::before {
-    background-color: $bg-color-slider;
-    opacity: 0.6;
+    background-repeat: no-repeat;
   }
 }
 
