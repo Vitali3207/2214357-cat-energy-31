@@ -2,8 +2,9 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+
     padding-bottom: 100px;
-  }
+
 
   @media (min-width: $desktop-width) {
     padding-bottom: 85px;
@@ -41,7 +42,6 @@
   &--after {
     clip-path: inset(0 0 0 50%);
   }
-}
 
 .slider__toggle {
   z-index: 1;
@@ -49,6 +49,7 @@
   top: 1px;
   right: 140px;
   transform: translateX(-50%);
+
   width: 40px;
   height: 256px;
   padding: 0;
@@ -72,7 +73,16 @@
     background-color: $bg-color-social;
   }
 
+  &:hover {
+    border: 2px solid $bg-basic-green;
+  }
+
+  &:active {
+    border: 2px solid $bg-color-slider;
+  }
+
   @media (min-width: $tablet-width) {
+
     height: 512px;
     left: -280px;
     top: 3px;
@@ -80,8 +90,8 @@
     &::before {
       top: 256px;
     }
-  }
 
+ 
   &:disabled,
   &:disabled::before {
     opacity: 0.3;
@@ -109,6 +119,7 @@
   &:not(:disabled):active::before {
     background-color: $bg-color-slider;
     stroke: $bg-color-slider;
+
   }
 }
 

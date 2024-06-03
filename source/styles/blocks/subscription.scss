@@ -59,7 +59,9 @@
     }
 
     @media (min-width: $desktop-width) {
+
       top: 17px;
+
     }
   }
 }
@@ -102,13 +104,16 @@
   outline: none;
   color: $color-text-secondary;
 
+
   &::placeholder {
     color: $color-text-secondary;
   }
 
+
   &:hover {
     border: 1px solid $color-line-3;
   }
+
 
   &:focus-visible {
     background-color: 1px solid $color-line-3;
@@ -124,6 +129,7 @@
     outline-offset: -2px;
   }
   border: 1px solid $color-line-7;
+
 
   @media (min-width: $tablet-width) {
     width: 376px;
