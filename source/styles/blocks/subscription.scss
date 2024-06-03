@@ -59,7 +59,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 19px;
+      top: 17px;
     }
   }
 }
@@ -88,28 +88,41 @@
 }
 
 .subscription__email {
+  box-sizing: border-box;
   font-family: $font-secondary;
   font-size: 20px;
-  line-height: 30px;
+  line-height: normal;
+  font-weight: 400;
   width: 100%;
   height: 56px;
-  padding: 13px;
+  padding: 12px 13px;
   margin-bottom: 16px;
   text-align: left;
   text-transform: uppercase;
+  outline: none;
   color: $color-text-secondary;
   border: 1px solid $color-line-7;
+
+  &::placeholder {
+    color: $color-text-secondary;
+  }
 
   &:hover {
     border: 1px solid $color-line-3;
   }
 
-  &:focus {
-    border: 2px solid $color-line-8;
+  &:focus-visible {
+    background-color: 1px solid $color-line-3;
   }
 
-  &:active {
-    border: 2px solid $color-line-9;
+  &:focus-visible:not(:placeholder-shown) {
+    outline: 2px solid $color-line-8;
+    outline-offset: -2px;
+  }
+
+  &--error:not(:placeholder-shown) {
+    outline: 2px solid $color-line-9;
+    outline-offset: -2px;
   }
 
   @media (min-width: $tablet-width) {
@@ -124,14 +137,13 @@
   }
 }
 
-
 .subscription__button {
   font-family: $font-secondary;
   font-size: 20px;
-  line-height: 26px;
-  text-align: center;
   width: 100%;
   height: 56px;
+  line-height: 26px;
+  text-align: center;
   padding: 15px 81px;
 
   @media (min-width: $tablet-width) {
