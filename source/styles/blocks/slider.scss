@@ -6,8 +6,9 @@
     padding-bottom: 100px;
 
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 85px;
+    @media (min-width: $desktop-width) {
+      padding-bottom: 85px;
+    }
   }
 }
 
@@ -42,6 +43,7 @@
   &--after {
     clip-path: inset(0 0 0 50%);
   }
+}
 
 .slider__toggle {
   z-index: 1;
@@ -91,35 +93,35 @@
       top: 256px;
     }
 
- 
-  &:disabled,
-  &:disabled::before {
-    opacity: 0.3;
-    cursor: default;
-  }
 
-  &:focus-visible,
-  &:not(:disabled):hover {
-    color: $bg-basic-green;
-    stroke: $bg-basic-green;
-  }
+    &:disabled,
+    &:disabled::before {
+      opacity: 0.3;
+      cursor: default;
+    }
 
-  &:focus-visible::before,
-  &:not(:disabled):hover::before {
-    background-color: $bg-basic-green;
-    stroke: $bg-basic-green;
-  }
+    &:focus-visible,
+    &:not(:disabled):hover {
+      color: $bg-basic-green;
+      stroke: $bg-basic-green;
+    }
 
-  &:not(:disabled):active {
-    color: $bg-color-slider;
-    opacity: 0.6;
-    stroke: $bg-color-slider;
-  }
+    &:focus-visible::before,
+    &:not(:disabled):hover::before {
+      background-color: $bg-basic-green;
+      stroke: $bg-basic-green;
+    }
 
-  &:not(:disabled):active::before {
-    background-color: $bg-color-slider;
-    stroke: $bg-color-slider;
+    &:not(:disabled):active {
+      color: $bg-color-slider;
+      opacity: 0.6;
+      stroke: $bg-color-slider;
+    }
 
+    &:not(:disabled):active::before {
+      background-color: $bg-color-slider;
+      stroke: $bg-color-slider;
+    }
   }
 }
 
